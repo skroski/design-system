@@ -1,11 +1,11 @@
 import { Meta, StoryObj } from '@storybook/react'
-import { Text, TextProps } from './Text'
+import { Button, ButtonProps } from './Button'
 
 export default {
-    title: 'Components/Text',
-    component: Text,
+    title: 'Components/Button',
+    component: Button,
     args: {
-        children: 'Lorem Ipsum',
+        children: 'Create Account',
        size: 'md',
     },
     argTypes: {
@@ -17,28 +17,28 @@ export default {
         }
     },
 
-} as Meta<TextProps>
+} as Meta<ButtonProps>
 
-export const Default: StoryObj<TextProps> = {
+export const Default: StoryObj<ButtonProps> = {
     args: {
         size: 'md'
     },
 }
-export const Small: StoryObj<TextProps> = {
+export const Small: StoryObj<ButtonProps> = {
     args: {
         size: 'sm'
     },
 }
-export const Large: StoryObj<TextProps> = {
+export const Large: StoryObj<ButtonProps> = {
     args: {
         size: 'lg'
     },
 }
-export const CustomComponent: StoryObj<TextProps> = {
+export const CustomComponent: StoryObj<ButtonProps> = {
     args: {
         asChild: true,
         children: (
-            <p>Text P Tag</p>
+            <p>Button Tag</p>
         )
     },
     argTypes: {
